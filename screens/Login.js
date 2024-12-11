@@ -23,6 +23,7 @@ const LoginScreen = ({ navigation }) => {
       if (response.status === 'success') {
         // Store token in AsyncStorage
         await AsyncStorage.setItem('authToken', response.token);
+        await AsyncStorage.setItem('userData', JSON.stringify(response.user))
 
         Alert.alert('Success', response.message);
         navigation.navigate('Dashboard'); // Navigate to the dashboard after login

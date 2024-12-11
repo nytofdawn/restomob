@@ -50,8 +50,9 @@ const Dashboard = ({ navigation }) => {
                     <Text style={styles.itemText}>{item.name}</Text>
                     <Text style={styles.itemText}>{item.description}</Text>
                     <Text style={styles.itemText}>{item.category}</Text>
+                    <Text style={styles.itemText}>Available:{item.quantity}</Text>
                     <Text style={styles.itemText}>Price: {item.price}</Text>
-                    <Text style={styles.itemText}>Price: {item.photoUrl}</Text>
+                    <Text style={styles.itemText}>Image: {item.photoUrl}</Text>
                   </View>
                 ))
               )}
