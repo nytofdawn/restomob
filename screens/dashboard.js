@@ -47,8 +47,11 @@ const Dashboard = ({ navigation }) => {
               ) : (
                 items.map((item, index) => (
                   <View key={index} style={styles.itemCard}>
-                    <Text style={styles.itemText}>Item: {item.name}</Text>
+                    <Text style={styles.itemText}>{item.name}</Text>
+                    <Text style={styles.itemText}>{item.description}</Text>
+                    <Text style={styles.itemText}>{item.category}</Text>
                     <Text style={styles.itemText}>Price: {item.price}</Text>
+                    <Text style={styles.itemText}>Price: {item.photoUrl}</Text>
                   </View>
                 ))
               )}

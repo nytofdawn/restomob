@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = 'http://192.168.100.137:3000';
+const API_URL = 'http://192.168.1.11:3000';
 
 
 // Signup function
